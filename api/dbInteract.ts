@@ -14,7 +14,7 @@ const pool = mariadb.createPool({
 });
 
 class dbInteract {
-    async aQuery(query:string, params:any) {
+    async aQuery(query:string, params:string) {
         let connection;
         try {
             connection = await pool.getConnection();
