@@ -1,5 +1,6 @@
 import express from 'express';
 import cors from 'cors';
+import user from './routes/users';
 
 const PORT = 30125;
 
@@ -13,6 +14,7 @@ app.use(cors({
     allowedHeaders: ['Content-Type', 'Authorization']
 }));
 
+app.use("/user", user);
 
 // Bind to all network interfaces
 app.listen(PORT, '0.0.0.0', () => 
