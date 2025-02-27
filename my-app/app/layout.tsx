@@ -36,7 +36,7 @@ export default function RootLayout({
                 className={`${geistSans.variable} ${geistMono.variable} ${spaceMono.variable} antialiased`}
             >
                 <Theme>
-                    <main>{children}</main>
+                    <main className="max-w-96">{children}</main>
                 </Theme>
             </body>
         </html>
