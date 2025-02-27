@@ -3,13 +3,14 @@ import Image from "next/image";
 import randomPic from "../../../../public/randomPic.png";
 import { Box, Button, Card, Inset, Text } from "@radix-ui/themes";
 import leCed from "../../../../public/randomPic.png";
+import Judy from "../../../../public/CpJudy.png";
 
 const EventCard = () => {
     return (
         <Box maxWidth={'300px'}>
             <Card size="2">
                 <Inset clip="padding-box" side="top" pb="current">
-                    <Image src={leCed} alt="" />
+                    <Image src={Judy} alt="" />
                 </Inset>
                 <Text as="p" size={"6"}>Its My Birthday !</Text>
                 

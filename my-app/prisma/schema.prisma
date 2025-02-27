@@ -15,9 +15,11 @@ datasource db {
 
 model event {
     id          Int      @id @default(autoincrement())
-    title       String   @db.Char(255)
+    author      String   @db.Char(30)
+    title       String   @db.Char(30)
     description String   @db.Text
-    date        DateTime @db.DateTime
+    dateStart   DateTime @db.DateTime
+    dateFinish  DateTime @db.DateTime
     status      Status   @default(INCOMING)
     createdAt   DateTime @default(now())
     updatedAt   DateTime @updatedAt
